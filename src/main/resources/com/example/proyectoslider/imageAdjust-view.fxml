@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.proyectoslider.ImageAdjustController">
+
+    <!-- Imagen -->
+    <ImageView fx:id="imageView" fitWidth="300" fitHeight="200"  />
+
+    <!-- Control de brillo -->
+    <HBox alignment="CENTER" spacing="10">
+        <Label text="Brillo:"/>
+        <Slider fx:id="brightnessSlider"
+                min="-1" max="1"
+                maxWidth="200"/>
+    </HBox>
+
+    <!-- Control de contraste -->
+    <HBox alignment="CENTER" spacing="10">
+        <Label text="Contraste:"/>
+        <Slider fx:id="contrastSlider"
+                min="-1" max="1"
+                maxWidth="200" />
+    </HBox>
+
+    <!-- Control de saturación -->
+    <HBox alignment="CENTER"  spacing="10">
+        <Label text="Saturación:"/>
+        <Slider fx:id="saturationSlider"
+                min="-1" max="1"
+                maxWidth="200" />
+    </HBox>
+
+    <!-- Control de tonalidad -->
+    <HBox alignment="CENTER"  spacing="10">
+        <Label text="Tonalidad:"/>
+        <Slider fx:id="hueSlider"
+                min="-1" max="1"
+                maxWidth="200" />
+    </HBox>
+</VBox>
